@@ -42,7 +42,7 @@ const Login = () => {
   return (
     
     <S.Section>
-      <form action="cadastrar.html" method="post">
+      <form method="post" onSubmit={handleSubmit}>
         <label htmlFor="email">E-mail</label>
         <div>
           <input type="email" name="email" id="email" 
