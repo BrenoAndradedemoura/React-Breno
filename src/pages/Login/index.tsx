@@ -32,7 +32,7 @@ const Login = () => {
         password: String(password),
       })
       toast.success("Login realizado com sucesso!");
-      navigate('/adm')
+      navigate('/')
     } catch (error) {
       const err = error as AxiosError<IErrorResponse>
       toast.error(String(err.response?.data))
